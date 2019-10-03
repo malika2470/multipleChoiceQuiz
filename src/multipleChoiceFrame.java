@@ -87,13 +87,13 @@ public class multipleChoiceFrame extends javax.swing.JFrame {
         question1.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         question1.setText("1.) How many values can a variable store at one time? ");
 
-        option1.setText("1.) 1");
+        option1.setText("A.) 1");
 
-        option2.setText("2.) 2");
+        option2.setText("B.) 2");
 
-        option3.setText("3.) 5");
+        option3.setText("C.) 5");
 
-        option4.setText("4.) 10");
+        option4.setText("D.) 10");
 
         question2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         question2.setText("2.) Which data type declares a variable that stores a true or false value? ");
@@ -104,46 +104,46 @@ public class multipleChoiceFrame extends javax.swing.JFrame {
             }
         });
 
-        option5.setText("1.) int");
+        option5.setText("A.) int");
 
-        option6.setText("2.) char");
+        option6.setText("B.) char");
 
-        option7.setText("3.) boolean");
+        option7.setText("C.) boolean");
 
-        option8.setText("4.) double ");
+        option8.setText("D.) double ");
 
         question3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         question3.setText("3.) What operator is used for division?");
 
-        option9.setText("1.) *");
+        option9.setText("A.) *");
 
-        option10.setText("2.) /");
+        option10.setText("B.) /");
 
-        option13.setText("3.) #");
+        option13.setText("C.) #");
 
-        option14.setText("4.) %");
+        option14.setText("D.) %");
 
         question4.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         question4.setText("4.) Which statement is used to make the members of a package accessible to an application? ");
 
-        option15.setText("1.) import");
+        option15.setText("A.) import");
 
-        option16.setText("2.) static");
+        option16.setText("B.) static");
 
-        option17.setText("3.) class");
+        option17.setText("C.) class");
 
-        option18.setText("4.) public");
+        option18.setText("D.) public");
 
         question5.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         question5.setText("5.) What is the result of the following expression when x is 3576? (x/10)%10 ");
 
-        option19.setText("1.) 6");
+        option19.setText("A.) 6");
 
-        option20.setText("2.) 357");
+        option20.setText("B.) 357");
 
-        option21.setText("3.) 7");
+        option21.setText("C.) 7");
 
-        option22.setText("4.) 76");
+        option22.setText("D.) 76");
 
         correct.setText("Number of questions answered correctly");
 
@@ -162,17 +162,20 @@ public class multipleChoiceFrame extends javax.swing.JFrame {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(submitButton)
+                .addGap(175, 175, 175))
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(option13)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(option7)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(option8)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addContainerGap()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(option13)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(option7)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(option8))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(111, 111, 111)
                         .addComponent(tittle))
@@ -270,10 +273,6 @@ public class multipleChoiceFrame extends javax.swing.JFrame {
                         .addGap(53, 53, 53)
                         .addComponent(information)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(submitButton)
-                .addGap(175, 175, 175))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -407,87 +406,100 @@ public class multipleChoiceFrame extends javax.swing.JFrame {
 
     private void submitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitButtonActionPerformed
         Scanner keyedInput = new Scanner (System.in); 
-       double question1 = Double.parseDouble(answer1.getText());
-       double question2 = Double.parseDouble(answer2.getText());
-       double question3 = Double.parseDouble(answer3.getText());
-       double question4 = Double.parseDouble(answer4.getText());
-       double question5 = Double.parseDouble(answer5.getText());
        int totalcorrect = 0; 
        int totalincorrect =0; 
        int totalpercent = totalcorrect * 100; 
+       final String question1; 
+       final  String question2; 
+       final String question3; 
+       final String question4; 
+       final String question5; 
        totalpercent = totalpercent * 100; 
        totalpercent = Math.round(totalpercent); 
        totalpercent = totalpercent/100; 
        correctDisplay.setText(":" + totalcorrect );
        incorrectDisplay.setText(":"+ totalincorrect); 
-       percentDisplay.setText(":" + totalpercent); 
-       if (question1==1)
-         wordDisplay1.setText("Correct, Well done");
-       totalcorrect = totalcorrect + 1; 
-        if(question1==2)
-        wordDisplay1.setText("Incorrect, try again");
-        totalincorrect = totalincorrect + 1; 
-        if(question1==3)
-        wordDisplay1.setText("Incorrect, try again");
-        totalincorrect = totalincorrect + 1; 
-       if(question1==4) 
-        wordDisplay1.setText("Incorrect, try again"); 
-       totalincorrect = totalincorrect + 1; 
-       if (question2==1)
-         wordDisplay2.setText("Incorrect, try again");
-       totalincorrect = totalincorrect + 1; 
-         if(question2==2)
-        wordDisplay2.setText("Incorrect, try again");
-        totalincorrect = totalincorrect + 1; 
-        if(question2==3)
-        wordDisplay2.setText("Correct,Well done");
-        totalcorrect = totalcorrect + 1; 
-         if(question2==4) 
-        wordDisplay3.setText("Incorrect, try again");
-       totalincorrect = totalincorrect + 1; 
-       if (question3==1) 
-         wordDisplay3.setText("Incorrect, try again"); 
-       totalincorrect = totalincorrect + 1; 
-        if(question3==2)  
-        wordDisplay3.setText("Correct, Well done"); 
-        totalcorrect = totalcorrect + 1; 
-         if(question3==3)
-        wordDisplay3.setText("Incorrect, try again"); 
-        totalincorrect = totalincorrect + 1; 
-         if(question3==4) 
-        wordDisplay3.setText("Incorrect, try again");
-        totalincorrect = totalincorrect + 1; 
-        if (question4==1) 
-         wordDisplay4.setText("Correct, Well done"); 
-        totalcorrect = totalcorrect + 1; 
-         if(question4==2)
-        wordDisplay4.setText("Incorrect, try again");
-        totalincorrect = totalincorrect + 1; 
-         if(question4==3)
-        wordDisplay4.setText("Incorrect, try again ");
-        totalincorrect = totalincorrect + 1; 
-        if(question4==4) 
-        wordDisplay4.setText("Incorrect, try again");
-        totalincorrect = totalincorrect + 1; 
-        if (question5==1) 
-         wordDisplay5.setText("Incorrect, try again");
-        totalincorrect = totalincorrect + 1; 
-        if(question5==2)  
-        wordDisplay5.setText("Incorrect, try again");
-        totalincorrect = totalincorrect + 1; 
-       if(question5==3)
-       wordDisplay5.setText("Correct, Well done!");
-       totalcorrect = totalcorrect + 1; 
-         if(question5==4)
-         wordDisplay5.setText("Incorrect, try again");
-       totalincorrect = totalincorrect + 1; 
-       correctDisplay.setText(String.valueOf(totalcorrect)); 
-       incorrectDisplay.setText(String.valueOf(totalincorrect)); 
-       percentDisplay.setText(String.valueOf(totalpercent)); 
+       percentDisplay.setText(":" + totalpercent/100); 
+      question1 = keyedInput.nextLine(); 
+      question2 = keyedInput.nextLine(); 
+      question3 = keyedInput.nextLine(); 
+      question4 = keyedInput.nextLine(); 
+      question5 = keyedInput.nextLine(); 
+//      //question1 
+       if (question1.equals("A"))
+        totalcorrect=totalcorrect +1; 
+       {wordDisplay1.setText("Correct, Well done");}
+        if (question1.equals("B"))
+        totalincorrect=totalincorrect +1; 
+       {wordDisplay1.setText("Incorrect, Try again");}
+       if (question1.equals("C"))
+       totalincorrect=totalincorrect +1; 
+       {wordDisplay1.setText("Incorrect, Try again");}
+       if (question1.equals("D"))
+       totalincorrect=totalincorrect +1; 
+       {wordDisplay1.setText("Incorrect, Try again");}
+       
+//     //question2
+       if (question2.equals("C"))
+       totalincorrect=totalincorrect +1; 
+       {wordDisplay2.setText("Correct, Well done");}
+       totalcorrect=totalcorrect +1; 
+       if (question1.equals("B"))
+       totalincorrect=totalincorrect +1; 
+       {wordDisplay2.setText("Incorrect, Try again");}
+       if (question2.equals("A"))
+       totalincorrect=totalincorrect +1; 
+       {wordDisplay2.setText("Incorrect, Well done");}
+       if (question2.equals("D"))
+       totalincorrect=totalincorrect +1; 
+       {wordDisplay2.setText("Incorrect, Try again");}
+
+//     //question3
+       if (question3.equals("B"))
+       totalcorrect=totalcorrect +1; 
+       {wordDisplay3.setText("Correct, Well done");} 
+       if (question3.equals("A"))
+       totalincorrect=totalincorrect +1; 
+       {wordDisplay3.setText("Incorrect, Try again");}
+       if (question3.equals("C"))
+       totalincorrect=totalincorrect +1; 
+       {wordDisplay3.setText("Incorrect, Try again");}
+       if (question3.equals("D"))
+       totalincorrect=totalincorrect +1; 
+       {wordDisplay3.setText("Incorrect, Try again");}
+
+//    //question4
+       if (question4.equals("A"))
+       totalcorrect=totalcorrect +1; 
+       {wordDisplay4.setText("Correct, Well done");} 
+       if (question4.equals("B"))
+       totalincorrect=totalincorrect +1; 
+       {wordDisplay4.setText("Incorrect, Try again");}
+       if (question4.equals("C"))
+       totalincorrect=totalincorrect +1; 
+       {wordDisplay4.setText("Incorrect, Try again");}
+       if (question4.equals("D"))
+       totalincorrect=totalincorrect +1; 
+       {wordDisplay4.setText("Incorrect, Try again");}
+
+//    //question5 
+       if (question5.equals("C"))
+       totalcorrect=totalcorrect +1; 
+       {wordDisplay5.setText("Correct, Well done");} 
+       if (question5.equals("B"))
+       totalincorrect=totalincorrect +1; 
+       {wordDisplay5.setText("Incorrect, Try again");}
+       if (question5.equals("C"))
+       totalincorrect=totalincorrect +1; 
+       {wordDisplay5.setText("Incorrect, Try again");}
+       if (question5.equals("D"))
+       totalincorrect=totalincorrect +1; 
+       {wordDisplay5.setText("Incorrect, Try again");}
          
-    
-         
-        
+// label Displays
+correctDisplay.setText(String.valueOf(totalcorrect));
+incorrectDisplay.setText(String.valueOf(totalincorrect)); 
+percentDisplay.setText(String.valueOf(totalpercent)); 
         
         
          

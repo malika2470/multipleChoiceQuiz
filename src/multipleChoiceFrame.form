@@ -46,20 +46,24 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" attributes="0">
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="option13" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Group type="102" alignment="0" attributes="0">
-                          <Component id="option7" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="option8" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="32767" attributes="0"/>
-                      </Group>
-                  </Group>
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  <Component id="submitButton" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="175" max="-2" attributes="0"/>
               </Group>
               <Group type="102" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="option13" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="option7" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="option8" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="111" max="-2" attributes="0"/>
                           <Component id="tittle" min="-2" max="-2" attributes="0"/>
@@ -182,11 +186,6 @@
                       </Group>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
-              </Group>
-              <Group type="102" alignment="1" attributes="0">
-                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                  <Component id="submitButton" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="175" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -357,22 +356,22 @@
         </Component>
         <Component class="javax.swing.JLabel" name="option1">
           <Properties>
-            <Property name="text" type="java.lang.String" value="1.) 1"/>
+            <Property name="text" type="java.lang.String" value="A.) 1"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="option2">
           <Properties>
-            <Property name="text" type="java.lang.String" value="2.) 2"/>
+            <Property name="text" type="java.lang.String" value="B.) 2"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="option3">
           <Properties>
-            <Property name="text" type="java.lang.String" value="3.) 5"/>
+            <Property name="text" type="java.lang.String" value="C.) 5"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="option4">
           <Properties>
-            <Property name="text" type="java.lang.String" value="4.) 10"/>
+            <Property name="text" type="java.lang.String" value="D.) 10"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="question2">
@@ -390,22 +389,22 @@
         </Component>
         <Component class="javax.swing.JLabel" name="option5">
           <Properties>
-            <Property name="text" type="java.lang.String" value="1.) int"/>
+            <Property name="text" type="java.lang.String" value="A.) int"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="option6">
           <Properties>
-            <Property name="text" type="java.lang.String" value="2.) char"/>
+            <Property name="text" type="java.lang.String" value="B.) char"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="option7">
           <Properties>
-            <Property name="text" type="java.lang.String" value="3.) boolean"/>
+            <Property name="text" type="java.lang.String" value="C.) boolean"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="option8">
           <Properties>
-            <Property name="text" type="java.lang.String" value="4.) double "/>
+            <Property name="text" type="java.lang.String" value="D.) double "/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="answer2">
@@ -420,22 +419,22 @@
         </Component>
         <Component class="javax.swing.JLabel" name="option9">
           <Properties>
-            <Property name="text" type="java.lang.String" value="1.) *"/>
+            <Property name="text" type="java.lang.String" value="A.) *"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="option10">
           <Properties>
-            <Property name="text" type="java.lang.String" value="2.) /"/>
+            <Property name="text" type="java.lang.String" value="B.) /"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="option13">
           <Properties>
-            <Property name="text" type="java.lang.String" value="3.) #"/>
+            <Property name="text" type="java.lang.String" value="C.) #"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="option14">
           <Properties>
-            <Property name="text" type="java.lang.String" value="4.) %"/>
+            <Property name="text" type="java.lang.String" value="D.) %"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="answer3">
@@ -450,22 +449,22 @@
         </Component>
         <Component class="javax.swing.JLabel" name="option15">
           <Properties>
-            <Property name="text" type="java.lang.String" value="1.) import"/>
+            <Property name="text" type="java.lang.String" value="A.) import"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="option16">
           <Properties>
-            <Property name="text" type="java.lang.String" value="2.) static"/>
+            <Property name="text" type="java.lang.String" value="B.) static"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="option17">
           <Properties>
-            <Property name="text" type="java.lang.String" value="3.) class"/>
+            <Property name="text" type="java.lang.String" value="C.) class"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="option18">
           <Properties>
-            <Property name="text" type="java.lang.String" value="4.) public"/>
+            <Property name="text" type="java.lang.String" value="D.) public"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="answer4">
@@ -480,22 +479,22 @@
         </Component>
         <Component class="javax.swing.JLabel" name="option19">
           <Properties>
-            <Property name="text" type="java.lang.String" value="1.) 6"/>
+            <Property name="text" type="java.lang.String" value="A.) 6"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="option20">
           <Properties>
-            <Property name="text" type="java.lang.String" value="2.) 357"/>
+            <Property name="text" type="java.lang.String" value="B.) 357"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="option21">
           <Properties>
-            <Property name="text" type="java.lang.String" value="3.) 7"/>
+            <Property name="text" type="java.lang.String" value="C.) 7"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="option22">
           <Properties>
-            <Property name="text" type="java.lang.String" value="4.) 76"/>
+            <Property name="text" type="java.lang.String" value="D.) 76"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="answer5">
